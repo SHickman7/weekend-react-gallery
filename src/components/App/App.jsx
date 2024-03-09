@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-
+import GalleryList from '../GalleryList/GalleryList';
 
 function App() {
 
@@ -33,14 +33,8 @@ function App() {
         <header>
           <h1>React Gallery</h1>
         </header>
-
-        <p>The gallery goes here!</p>
-        <ul>
-          {galleryList.map(gallery =>(
-            <li key={gallery.id}>{gallery.url}</li>
-          ))}
+        <ul> <GalleryList />
         </ul>
-        <img src="images/goat_small.jpg"/>
       </div>
     );
 }
