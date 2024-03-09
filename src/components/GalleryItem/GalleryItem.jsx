@@ -60,10 +60,9 @@ function GalleryItem({item, fetchGallery}) {
                     ? <p className='description_formatting' data-testid='toggle' onClick={toggleDescription}>{item.description}</p>
                     : <img className='item_formatting' src = {item.url} alt={item.description} data-testid="toggle" onClick={() => toggleDescription()}/>}
                     <p className='title_formatting'>{item.title}</p>
-            </div>
-            <br></br>
-            <div><button data-testid = "like" onClick={likeCounter} id={item.id}>LIKE</button>
-            {showLikes()}
+                    <br></br>
+                    <button className='button_formatting' data-testid = "like" onClick={likeCounter} id={item.id}>LIKE</button>
+                    <p className='likes_formatting'>{showLikes()}</p>
             </div>
         </>
 

@@ -21,3 +21,19 @@
 .title_formatting {
     padding-left: 100px;
 }
+
+.button_formatting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    
+}
+
+.likes_formatting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+
+}
