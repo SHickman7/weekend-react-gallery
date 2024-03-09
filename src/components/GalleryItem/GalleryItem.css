@@ -1,10 +1,23 @@
 
-.gallery_item {
+
+.item_formatting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 175px;
     width: 150px;
     padding-left: 100px;
 }
 
-.title_padding {
+.description_formatting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    width: 150px;
+    padding-left: 100px;
+}
+
+.title_formatting {
     padding-left: 100px;
 }
