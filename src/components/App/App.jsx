@@ -4,6 +4,8 @@ import GalleryList from '../GalleryList/GalleryList';
 
 function App() {
 
+
+  // Get functionality
   const fetchGallery = () => {
     axios({
       method: 'GET',
