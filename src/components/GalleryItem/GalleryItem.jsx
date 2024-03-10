@@ -11,24 +11,6 @@ function GalleryItem({item, fetchGallery}) {
         setDisplayDescription(!displayDescription);
     }
 
-
-    const imageDisplayed = () => {
-
-        if (displayDescription){
-            return (
-                <>
-                    <div data-testid="description">{item.description}</div>
-                </>
-            )
-        } else {
-            return (
-                <>
-                    <img srce = {item.url}>/</img>
-                </>
-            )
-        }
-    }
-
     const likeCounter = (event) => {
         axios({
             method: 'PUT',
